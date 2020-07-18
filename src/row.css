@@ -4,7 +4,9 @@
     padding: 20px;
 }
 .row__grid::-webkit-scrollbar{
-    display: none;
+    @media(max-width:1024px){
+        display: none;
+    }
 }
 .row__image{
     max-width: 10.25rem;
