@@ -1,0 +1,19 @@
+.row__grid{
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px;
+}
+.row__grid::-webkit-scrollbar{
+    display: none;
+}
+.row__image{
+    max-width: 10.25rem;
+    margin-right:25px ;
+    width: 100%;
+    max-height: 10.25rem;
+    object-fit: contain;
+    transition: transform 450ms;
+}
+.row__image:hover{
+    transform:scale(1.08);
+}
