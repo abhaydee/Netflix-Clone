@@ -17,5 +17,5 @@
     transition: transform 450ms;
 }
 .row__image:hover{
-    transform:scale(1.08);
+    transform:scale(1.2);
 }

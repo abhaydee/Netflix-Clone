@@ -1,6 +1,5 @@
 import React from 'react'
 import Row from './Row'
-import requests from './requests'
 import {dataRequired} from './data'
 export default function App() {
     return (

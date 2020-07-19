@@ -7,7 +7,6 @@ function Row({ title, fetchUrl }) {
   useEffect(() => {
     async function fetchApiData() {
       const request = await instance.get(fetchUrl);
-      console.log("the api request", request.data.results);
       setMovie(request.data.results);
       return request;
     }
