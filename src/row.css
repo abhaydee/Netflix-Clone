@@ -1,6 +1,10 @@
+.row{
+    margin-left: 20px;
+}
 .row__grid{
     display: flex;
     overflow-x: scroll;
+    overflow-y: hidden;
     padding: 20px;
 }
 .row__grid::-webkit-scrollbar{
@@ -17,5 +21,11 @@
     transition: transform 450ms;
 }
 .row__image:hover{
-    transform:scale(1.2);
+    transform:scale(1.08);
+}
+.row__imageLarge{
+    max-height: 250px;
+}
+.row__imageLarge:hover{
+    transform:scale(1.09);
 }

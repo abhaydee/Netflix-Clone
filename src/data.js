@@ -1,6 +1,6 @@
 import requests from './requests'
 export const dataRequired=[
-    {id:1,title:"NETFLIX ORIGINALS",url:requests.fetchNetflixOriginals},
+    {id:1,title:"NETFLIX ORIGINALS",url:requests.fetchNetflixOriginals,largeRowRequired:true},
     {id:2,title:"Trending Now",url:requests.fetchTrending},
     {id:3,title:"Top Rated",url:requests.fetchTopRated},
     {id:4,title:'Action Movies',url:requests.fetchActionMovies},

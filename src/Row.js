@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import { instance } from "./axios";
 import "./row.css";
 const base_url = "https://image.tmdb.org/t/p/original/";
-function Row({ title, fetchUrl }) {
+function Row({ title, fetchUrl,largeRowRequired }) {
   const [movies, setMovie] = useState([]);
   useEffect(() => {
     async function fetchApiData() {
       const request = await instance.get(fetchUrl);
+      console.log("the api data",request.data.results)
       setMovie(request.data.results);
       return request;
     }
@@ -19,8 +20,8 @@ function Row({ title, fetchUrl }) {
         {movies.map((movie) => (
           <img
             key={movie.id}
-            className="row__image"
-            src={`${base_url}${movie.poster_path}`}
+            className={`row__image ${largeRowRequired && "row__imageLarge"}`}
+            src={`${base_url}${largeRowRequired ? movie.poster_path: movie.backdrop_path }`}
             alt={movie.name}
           />
         ))}
