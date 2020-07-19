@@ -3,6 +3,7 @@ import Row from './Row'
 import {dataRequired} from './data'
 import Nav from './Nav'
 import Banner from './Banner'
+import './App.css'
 export default function App() {
     return (
         <div className="App">
