@@ -1,8 +1,8 @@
 import React from 'react'
-import Row from './Row'
-import {dataRequired} from './data'
-import Nav from './Nav'
-import Banner from './Banner'
+import Row from './Components/RowGrid/Row'
+import {dataRequired} from './services/data'
+import Nav from './Components/Navbar/Nav'
+import Banner from './Components/Banner/Banner'
 import './App.css'
 export default function App() {
     return (

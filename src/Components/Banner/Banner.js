@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { instance } from "./axios";
-import { dataRequired } from "./data";
+import { instance } from "../../services/axios";
+import { dataRequired } from "../../services/data";
 import "./banner.css";
 function Banner() {
   const [movie, setMovies] = useState([]);
