@@ -9,7 +9,7 @@ export default function App() {
             <Nav/>
             <Banner/>
             {dataRequired.map((rowData)=>(
-                <Row id={rowData.id} largeRowRequired={rowData.largeRowRequired} title={rowData.title} fetchUrl={rowData.url}/>
+                <Row key={rowData.id} largeRowRequired={rowData.largeRowRequired} title={rowData.title} fetchUrl={rowData.url}/>
             ))}
         </div>
     )

@@ -1,45 +1,43 @@
-.navbar{
+.navbar {
   position: fixed;
-  top:0;
+  top: 0;
   width: 100%;
   padding: 20px;
-  display: flex;  
+  display: flex;
   justify-content: space-between;
-  transition-timing-function:ease-in;
+  transition-timing-function: ease-in;
   transition: all 0.5s;
 }
-.nav__logo{
-    position: fixed;
-    left: 20px;
-    width: 80px;
-    object-fit: contain;
+.nav__logo {
+  position: fixed;
+  left: 20px;
+  width: 80px;
+  object-fit: contain;
 }
 
-
-
-.nav__button{
-    position: fixed;
-    right: 20px;
-    cursor: pointer;
-    color: #fff;
-    outline: none;
-    border: none;
-    font-weight: 700;
-    border-radius: 0.2vw;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-right: 1rem;
-    padding-top: 0.5rem;
-    background-color:rgba(51,51,51,0.5);
-    padding-bottom: 0.5rem;
+.nav__button {
+  position: fixed;
+  right: 20px;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  background-color: rgba(51, 51, 51, 0.5);
+  padding-bottom: 0.5rem;
 }
 
-.nav__button:hover{
-    background-color: white;
-    color: #111111;
+.nav__button:hover {
+  background-color: white;
+  color: #111111;
 }
 
-.nav__black{
-    background-color: #111;
-    height: 30px;
+.nav__black {
+  background-color: #111;
+  height: 30px;
 }

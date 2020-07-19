@@ -48,7 +48,7 @@ function Row({ title, fetchUrl, largeRowRequired }) {
             className={`row__image ${largeRowRequired && "row__imageLarge"}`}
             src={`${base_url}${
               largeRowRequired ? movie.poster_path : movie.backdrop_path
-            }`}
+              }`}
             alt={movie.name}
             onClick={() => handleClick(movie)}
           />
